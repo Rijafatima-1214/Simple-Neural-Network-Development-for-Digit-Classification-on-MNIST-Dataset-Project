@@ -1,0 +1,42 @@
+Project 8: Simple Neural Network Development for Digit Classification
+Project Title: Simple Neural Network Development for Digit Classification on MNIST Dataset
+Project Goal: To build and train a foundational neural network using TensorFlow/Keras for multi-class image classification. This project will focus on the MNIST dataset to classify handwritten digits, with an emphasis on experimenting with different activation functions and visualizing training progress.
+Objectives:
+1.	Dataset Loading and Preprocessing:
+o	Load the MNIST dataset (handwritten digits) from TensorFlow/Keras built-in datasets.
+o	Perform essential preprocessing steps:
+	Normalize pixel values (e.g., scale to a 0-1 range).
+	Reshape input images as required by the neural network architecture (e.g., flatten for dense layers).
+	One-hot encode the target labels for multi-class classification.
+o	Split the dataset into training and testing sets.
+2.	Neural Network Architecture Design and Training:
+o	Design a simple feed-forward neural network (e.g., a few dense layers).
+o	Activation Function Experimentation: Train two distinct models, each utilizing a different activation function in their hidden layers:
+	Model A: Use the ReLU (Rectified Linear Unit) activation function.
+	Model B: Use the Sigmoid activation function.
+o	Compile both models with an appropriate optimizer (e.g., 'adam') and loss function (e.g., 'categorical_crossentropy' for one-hot encoded labels).
+o	Train both models for a suitable number of epochs, monitoring accuracy and loss during training.
+3.	Performance Visualization:
+o	For each trained model (ReLU and Sigmoid), plot the training and validation accuracy curves over epochs.
+o	For each trained model, plot the training and validation loss curves over epochs.
+o	Ensure plots are clearly labeled and professionally presented.
+4.	Comparative Analysis:
+o	Compare the performance (convergence speed, final accuracy, and loss behavior) of the models trained with ReLU versus Sigmoid activation functions.
+o	Discuss the observed differences and potential reasons for them.
+Tools/Libraries:
+•	Python 3.x
+•	TensorFlow / Keras (for neural network construction and training)
+•	NumPy (for numerical operations)
+•	Matplotlib (for plotting accuracy and loss curves)
+Deliverables:
+•	A well-structured and commented Python script (.py or .ipynb) that implements the neural network training and evaluation for both activation functions.
+•	Two sets of plots (one for each activation function), showing:
+o	Training and validation accuracy over epochs.
+o	Training and validation loss over epochs.
+•	A brief analytical summary (within comments or markdown) discussing the performance comparison between the ReLU and Sigmoid activated networks.
+Success Criteria:
+•	The MNIST dataset is correctly loaded and preprocessed.
+•	Two neural network models are successfully built and trained, each with the specified activation function.
+•	Accuracy and loss curves are accurately plotted for both training and validation sets for each model.
+•	A clear comparison and discussion of the results are provided.
+•	The code is efficient, readable, and reproducible.
